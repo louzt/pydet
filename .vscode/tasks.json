@@ -1,0 +1,28 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Face Detection - Image",
+			"type": "shell",
+			"command": ".\\venv\\Scripts\\python.exe",
+			"args": [
+				"src/face_detection_image.py",
+				"--image",
+				"examples/sample_images/test.jpg"
+			],
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run Face Detection - Camera",
+			"type": "shell",
+			"command": ".\\venv\\Scripts\\python.exe",
+			"args": [
+				"src/face_detection_camera.py"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
